@@ -1,0 +1,198 @@
+<html>
+	<head>
+		<title>
+			HOME PAGE
+		</title>
+
+        {% load staticfiles %}
+        <!-- Basic Style sheet -->
+		<link rel="stylesheet" href="{% static 'music/css/styles.css' %}">
+
+		<!-- Including jquery -->
+        <script src="{% static 'music/js/jquery.min.js' %}"></script>
+
+        <!-- Includes for Bootstrap dependency -->
+        <link rel = "stylesheet" type = "text/css" href = "{% static 'music/bootstrap/css/bootstrap.min.css' %}">
+        <script src="{% static 'music/bootstrap/js/bootstrap.min.js' %}"></script>
+
+        <!-- Bootstrap  Music player -->
+	    <link href="{% static 'music/css/bootstrap3_player.css' %}" rel="stylesheet">
+
+	</head>
+
+	<body>
+
+		<div header="head">
+			<nav class="hello navbar navbar-default ">
+			  	<div class="container-fluid">
+					<div class="navbar-header">
+						  <a class="navbar-brand" href="#"> AudioNet</a>
+					</div>
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="#">Home</a></li>
+						<li><a href="#">MyProfile</a></li>
+						<li><a href="#">Page 2</a></li>
+					</ul>
+					<ul class = "nav navbar-nav navbar-right">
+						<li class = "navbar-right"><a href="#">Login</a></li>
+						<li class = "navbar-right"><a href="#">About</a></li>
+					</ul>
+			  	</div>
+			</nav>
+		</div>
+
+		<article class="feeds">
+			<div class="feeditem">
+				<div class="feeds-single">
+					<div class="user">
+						<div><img class="image img-circle" src="{% static 'music/img/Disha-Patani.jpg' %}"></div>
+						<div class="user-name" style = "display:inline-block; margin-right:5%">Disha Patani 
+						</div>
+						<div class="action" style="display:inline-block"> is listening to </div>
+						<div class="song" style="display:block;text-align:center"> <h4>Iain Houston and Felix Gibbons ub</h4></div>
+					</div>
+					<div class="like btn-group">
+						<button type="button" class="btn-xs btn btn-warning">Like</button>
+						<button type="button" class="btn-xs btn btn-warning">Share</button>
+					</div>
+					<div class="count">10</div>
+					<div class="play">
+						<button type="button" class=" btn btn-warning btn-circle btn-lg"><i class="glyphicon glyphicon-play"></i></button>
+					</div>
+				</div>
+			</div>	
+			
+			<div class=" feeditem">
+				<div class="feeds-single">
+					<div class="user">
+						<div><img class="image img-circle" src="{% static 'music/img/Disha-Patani.jpg' %}"></div>
+						<div class="user-name" style = "display:inline-block; margin-right:5%">Disha Patani 
+						</div>
+						<div class="action" style="display:inline-block"> is listening to </div>
+						<div class="song" style="display:block;text-align:center"> <h4>Iain Houston and Felix Gibbons nhj </h4></div>
+					</div>
+					<div class="like btn-group">
+						<button type="button" class="btn-xs btn btn-warning">Like</button>
+						<button type="button" class="btn-xs btn btn-warning">Share</button>
+					</div>
+					<div class="count">10</div>
+					<div class="play">
+						<button type="button" class=" btn btn-warning btn-circle btn-lg"><i class="glyphicon glyphicon-play"></i></button>
+					</div>
+				</div>	
+			</div>	
+		</article>
+
+		<div id="song-list">
+
+			<div id="top-songs-all" class="well well-lg">
+				<table class="top-song table table-striped table-hover" >
+				    <thead>
+				      <tr>
+				        <th>Top Songs</th>
+				      </tr>
+				    </thead>
+				    <tbody>
+				      <tr align="center">
+				        <td>John</td>
+				      </tr>
+				      <tr align="center">
+				        <td>Mary</td>
+				      </tr>
+				      <tr align="center">
+				        <td>July</td>
+				      </tr>
+				      <tr align="center">
+				        <td>July</td>
+				      </tr>
+				      <tr align="center">
+				        <td>July</td>
+				      </tr>
+				      <tr align="center">
+				        <td>July</td>
+				      </tr>
+				      <tr align="center">
+				        <td>July</td>
+				      </tr>
+				      <tr align="center">
+				        <td>July</td>
+				      </tr>
+				      <tr align="center">
+				        <td>July</td>
+				      </tr>
+				      <tr align="center">
+				        <td>July</td>
+				      </tr>
+				    </tbody>
+				 </table>
+			</div>
+
+			<div id="top-songs-friends" class="well well-lg">
+				<table class="top-song table table-striped table-hover" >
+				    <thead>
+				      <tr>
+				        <th>Top Songs Friends</th>
+				      </tr>
+				    </thead>
+				    <tbody>
+				      <tr align="center">
+				        <td>John</td>
+				      </tr>
+				      <tr align="center">
+				        <td>Mary</td>
+				      </tr>
+				      <tr align="center">
+				        <td>July</td>
+				      </tr>
+				      <tr align="center">
+				        <td>July</td>
+				      </tr>
+				      <tr align="center">
+				        <td>July</td>
+				      </tr>
+				      <tr align="center">
+				        <td>July</td>
+				      </tr>
+				      <tr align="center">
+				        <td>July</td>
+				      </tr>
+				      <tr align="center">
+				        <td>July</td>
+				      </tr>
+				      <tr align="center">
+				        <td>July</td>
+				      </tr>
+				      <tr align="center">
+				        <td>July</td>
+				      </tr>
+				    </tbody>
+				</table>
+			</div>
+
+			<div id="footer">
+				<div id="audio">
+
+					<audio controls
+			          data-info-album-title="8874"
+			          data-info-artist="Iain Houston and Felix Gibbons"
+			          data-info-title="BeBop Aliens"
+			          data-info-label="Independent"
+			          data-info-year="2005"
+			          data-info-att="Music: Iain Houston and Felix Gibbons."
+			          data-info-att-link="https://github.com/iainhouston">
+			          <source src="http://playerdemo.iainhouston.com/tests/BeBopAliens.ogg" type="audio/ogg" />
+			          <source src="http://playerdemo.iainhouston.com/tests/BeBopAliens.mp3" type="audio/mpeg" />
+			          <a href="http://playerdemo.iainhouston.com/tests/BeBopAliens.mp3">BeBopAliens</a>
+			          An html5-capable browser is required to play this audio. 
+			        </audio>
+				
+				</div>
+			</div>
+
+		</div>
+
+		<script src="{% static 'music/js/bootstrap3_player.js' %}"></script>
+
+
+	</body>
+</html>
